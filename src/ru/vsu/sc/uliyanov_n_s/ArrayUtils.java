@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ArrayUtils {
-
+// Слегка изменнёные утилиты Соломатина
     public static int[] readArrayFromConsole(String text) {
         System.out.print(text);
         Scanner scanner = new Scanner(System.in);
