@@ -6,7 +6,7 @@ public class Main {
         Test.testProgram();
         int[] arr = ArrayUtils.readArrayFromConsole("Enter an integer array: ");
         Sequence result = getSeq(arr);
-        Sequence.printValuesOfClassSequence(result);
+        printValuesOfClassSequence(result);
     }
 
     public static Sequence getSeq(int[] arr) {
@@ -40,5 +40,10 @@ public class Main {
         if (Math.abs(b) % 2 == 0)
             return Math.abs(a) % 2 != 0;
         return false;
+    }
+
+    public static void printValuesOfClassSequence(Sequence sequence) {
+        System.out.println("Index of first member: " + sequence.firstMemberIndex +
+                ". Value of members in sequence: " + sequence.lengthOfSequence + "\n");
     }
 }
